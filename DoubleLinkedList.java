@@ -55,4 +55,20 @@ public class DoubleLinkedList implements Comparable<nfs_DoubleLinkedList> {
     public int compareTo(nfs_DoubleLinkedList other) {
         return this.size() - other.size(); //SB: keeping it simple. Will either return positive or negative like class example
     } // method compareTo
+
+    //SB: indexOf method designed to return 0 if value is in 1st node, return 1 in second, and return -1 if not found. Should iterate through list.
+    public int indexOf(String value) {
+    Node current = this.head;
+    int index = 0;
+
+    while (current != null) {
+        if (current.getData().equals(value)) {
+            return index;
+        }
+        current = current.getNext();
+        index++;
+    }
+
+    return -1;
+    }
 } // class DoubleLinkedList
