@@ -53,6 +53,6 @@ public class DoubleLinkedList implements Comparable<nfs_DoubleLinkedList> {
 
     // implement the comparable interface
     public int compareTo(nfs_DoubleLinkedList other) {
-        return -1234567;
+        return this.size() - other.size(); //SB: keeping it simple. Will either return positive or negative like class example
     } // method compareTo
 } // class DoubleLinkedList
