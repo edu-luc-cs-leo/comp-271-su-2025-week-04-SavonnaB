@@ -31,8 +31,9 @@ public class DoubleLinkedList implements Comparable<nfs_DoubleLinkedList> {
             this.head = node;
         } else {
             this.tail.setNext(node);
+            node.setPrev(this.tail); //sets previous item in doublelinked list
+            this.tail = node;
         }
-        this.tail = node;
     } // method add
 
     // overload method add to add a node by value

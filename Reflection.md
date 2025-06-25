@@ -1,4 +1,4 @@
-*/ Week 03 reflection
+# Week 03 reflection
 For week 3 I will admit that I did start as Wednesdays are my only desginated free time to do my class assignments most of the time. 
 Looking at the original assingment I noted that I wasn't 100% sure that my code would operate properly because I sometimes have issues with logic/syntax.
 I just looked at previous examples from class and took the code bit by bit until things made sense from the method standpoint.
