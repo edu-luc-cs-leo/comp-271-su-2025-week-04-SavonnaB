@@ -71,4 +71,8 @@ public class DoubleLinkedList implements Comparable<nfs_DoubleLinkedList> {
 
     return -1;
     }
+    // SB: returns true if list has node with correct value
+    public boolean contains(String value) {
+    return indexOf(value) != -1;
+}
 } // class DoubleLinkedList
