@@ -29,15 +29,18 @@ public class DoubleLinkedList implements Comparable<nfs_DoubleLinkedList> {
     public void add(Node node) {
         if (this.head == null) {
             this.head = node;
+            this.tail = node;
         } else {
             this.tail.setNext(node);
-            node.setPrev(this.tail); //sets previous item in doublelinked list
+            node.setPrev(this.tail); //SB: sets previous item in doublelinked list
             this.tail = node;
         }
     } // method add
 
     // overload method add to add a node by value
     public void add(String value) {
+        Node newNode = new Node(value);
+        add(newNode); // SB: added code to call method
     } // method add
 
     // implement the comparable interface
